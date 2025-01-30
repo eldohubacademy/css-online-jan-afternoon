@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Introduction to CSS</h1>
+    <p style="font-style: italic">
+      CSS- Cascading Style Sheets - a programming language used to enhance the
+      look/presentation of a website hence building a nice looking user
+      interface and therefore improving user experence.
+    </p>
+    <p>CSS helps handle colors, positions and sizes of page content.</p>
+
+    <h2>CSS Syntax - How do we write css</h2>
+    <pre>
+
+        <code>
+            selector{
+                property: value;
+                property: value;
+                property: value;
+            }
+        </code>
+        <!-- 
+        selector - allows us to target an element or a group of element for styling 
+        {} - a declaration block - indicate a group of styles that will apply to the selected element
+        
+        property - the apsect of presentation we are interested in manipulating e.g. color, font-size, width, font, background,...
+
+        value - actual look you want to see e.g. green, 200px, center, ....
+        -->     
+
+        <p>Example</p>
+        <code>
+            h1{
+                color: green;
+                text-decoration: underline;
+            }
+        </code>
+
+    </pre>
+
+    <h2>Where do we put our CSS</h2>
+    <h3>
+      External CSS - put your code in .css file then <b>link</b> to the file
+      from your html
+    </h3>
+
+    <h3>Internal CSS - We put the styles in a style element</h3>
+
+    <h3>
+      Inline CSS -- for styling individual elements using the style attribute
+    </h3>
+
+    <style>
+      h2 {
+        color: red;
+      }
+      h3{
+        
+      }
+    </style>
+
+    <!-- 
+ Study these CSS concepts - USe code for illustration / as examples
+ 1. Inheritance
+ 2. Cascading 
+ 3. Specificity
+- How the browser reads/executes css
+-->
+    <!-- types of selectors -->
+    <!-- properties used in styling text - color, font size, itlaic, uppercase, letter spacing -->
+<!-- color, units,  -->
+    <!-- fylo landing page --  -->
+  </body>
+</html>

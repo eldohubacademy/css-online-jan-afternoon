@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+  </head>
+  <body>
+    <h1 class="nice">CSS Selectors</h1>
+    <p class="nice">
+      CSS selectors provide a way to target an element or a group of elements
+      for styling
+    </p>
+    <h2>Basic Selectors</h2>
+    <ul>
+      <li class="nice">
+        Element/Type Selector -- using the element's tag name - styles all
+        elements of that type in the page.
+      </li>
+      <li>
+        Class Selector - allows styling elements of same class(class attribute)
+      </li>
+      <li id="spec">
+        ID Selector - stlye one element(id are unique identifiers for an
+        element)
+      </li>
+    </ul>
+    <h2>Grouping selectors</h2>
+    <p>Multiple selectors sharing the same declaration block</p>
+    <h2>Combining Selectors</h2>
+    <ul>
+      <li>Descendant Selector(space) - all elements inside an element</li>
+      <li>Child selector(>) -targets only direct children</li>
+      <li>Adjacent sibling selector (+)</li>
+      <li>General sibling selector (~)</li>
+    </ul>
+    <div id="one">
+      <div id="two">
+        <p>Hello Ther!!!! i am a descendant of div one</p>
+        <span>hello again!!(adjacent to the p above)</span>
+        <span>third element in div two</span>
+      </div>
+      <span>outer span</span>
+      <p>Hello Ther!!!! i am a child of div one</p>
+    </div>
+    <style>
+      #two p ~ span {
+        /* the span immediatley after the p in div two */
+        font-size: 35px;
+      }
+
+      #one > p {
+        /*  only the paragraph that is a direct child of div one*/
+        color: green;
+        font-weight: bold;
+      }
+      img {
+        color: brown;
+      }
+      /* class selector */
+      .nIce {
+        font-style: italic;
+      }
+      /* id selector */
+      #spec {
+        text-decoration: line-through;
+      }
+      /* grouping selectors */
+      li,
+      h2,
+      h1 {
+        background-color: aliceblue;
+        border: 2px solid grey;
+      }
+    </style>
+  </body>
+</html>
