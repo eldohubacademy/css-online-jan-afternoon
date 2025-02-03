@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units and Measurements</title>
+  </head>
+  <body>
+    <h1>CSS Units and Measurements</h1>
+    <p>In CSS we can provide lengths and sizes using different units.</p>
+    <ul>
+      <li>
+        <h2>Absolute/Fixed units</h2>
+        <p>px, cm , in</p>
+      </li>
+      <li>
+        <h2>Relative unit</h2>
+        <p>em, rem, %, vh, vw</p>
+        <p>em - a unit relative to the font-size of the parent element</p>
+        <p>rem - a value related to the font-size of the root element(html)</p>
+        <p>vh - viewport height - availabe screen -- 100vh => full height</p>
+        <p>
+          vw - viewport width - availabe screen -- 50vw => half width of the
+          screen
+        </p>
+        <p>
+          % - percentage - in relation to the width/height of the parent element
+        </p>
+      </li>
+    </ul>
+
+    <style>
+      html {
+        font-size: 20px;
+      }
+      h1 {
+        border: 2px solid red;
+        font-size: 3rem; /* 3 * 20px  -- 48px*/
+        width: 500px;
+        height: 50vh;
+      }
+      li {
+        font-size: 50px;
+        width: 1800px;
+      }
+      h2 {
+        font-size: 2em; /*40px */
+        margin: 0.5em;
+        width: 50%;
+        background-color: orange;
+      }
+      p {
+        margin: 0.5em; /*25px*/
+      }
+    </style>
+  </body>
+</html>
