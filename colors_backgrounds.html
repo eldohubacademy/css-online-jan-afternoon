@@ -7,6 +7,49 @@
   </head>
   <body>
     <h1>Colors and Backgrounds in CSS-</h1>
-    
+    <h2>Colors</h2>
+    <p>
+      We can use color names, RGB code(0-255) , RGBa , HEXadecimal code e.g blue
+      #0000ff, HSL Code
+    </p>
+
+    <h2>Backgrounds</h2>
+    <p>background-color</p>
+    <p>background images</p>
+
+    <div id="card">
+      <h1>Albert Kipchirchir</h1>
+      <p>67842 43843 4384 4343</p>
+    </div>
+
+    <img src="./academy.png" alt="" />
+
+    <style>
+      #card {
+        width: 600px;
+        height: 400px;
+        background-image: url("elephant.webp");
+        /* background-size: 100%; */
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1 {
+        color: hsl(146, 83%, 36%);
+      }
+      p {
+        background-color: #0e3b2e;
+        padding: 20px;
+        margin: 60px;
+      }
+      body {
+        /* background-image: url("https://eldohub.co.ke/wp-content/uploads/2024/07/8-539x303.png"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
   </body>
 </html>
