@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex</title>
+  </head>
+  <body>
+    <h1>CSS Flex</h1>
+    <p>
+      CSS Flex is a layout model for building iterface. It allows arranging
+      elements in flexible rows and columns
+    </p>
+    <!-- Flex, -- fylo html -->
+    <ul id="products">
+      <li>
+        <img src="./fridge.jpg" alt="fridge 40l" />
+        <h2>Hotpoint Fridge</h2>
+        <p>KSH. 32,000</p>
+      </li>
+      <li>
+        <img src="./phone.jpg" alt="xiaomi 22" />
+        <h2>Xiami 22, 8gb 256</h2>
+        <p>KSH. 22,450</p>
+      </li>
+      <li>
+        <img src="./washing1.jpg" alt="whashing machine" />
+        <h2>Washing Machine, 10kg capacity</h2>
+        <p>KSH. 14,000</p>
+      </li>
+      <li>
+        <img src="./washing2.jpg" alt="whashing machine" />
+        <h2>Washing Machine, 5kg capacity</h2>
+        <p>KSH. 7,500</p>
+      </li>
+      <li>
+        <img src="./fridge.jpg" alt="fridge 40l" />
+        <h2>Hotpoint Fridge</h2>
+        <p>KSH. 32,000</p>
+      </li>
+      <li>
+        <img src="./phone.jpg" alt="xiaomi 22" />
+        <h2>Xiami 22, 8gb 256</h2>
+        <p>KSH. 22,450</p>
+      </li>
+      <li>
+        <img src="./washing1.jpg" alt="whashing machine" />
+        <h2>Washing Machine, 10kg capacity</h2>
+        <p>KSH. 14,000</p>
+      </li>
+      <li>
+        <img src="./washing2.jpg" alt="whashing machine" />
+        <h2>Washing Machine, 5kg capacity</h2>
+        <p>KSH. 7,500</p>
+      </li>
+      <li>
+        <img src="./fridge.jpg" alt="fridge 40l" />
+        <h2>Hotpoint Fridge</h2>
+        <p>KSH. 32,000</p>
+      </li>
+      <li>
+        <img src="./phone.jpg" alt="xiaomi 22" />
+        <h2>Xiami 22, 8gb 256</h2>
+        <p>KSH. 22,450</p>
+      </li>
+      <li>
+        <img src="./washing1.jpg" alt="whashing machine" />
+        <h2>Washing Machine, 10kg capacity</h2>
+        <p>KSH. 14,000</p>
+      </li>
+      <li>
+        <img src="./washing2.jpg" alt="whashing machine" />
+        <h2>Washing Machine, 5kg capacity</h2>
+        <p>KSH. 7,500</p>
+      </li>
+    </ul>
+
+    <style>
+      body {
+        background-color: #ec2427;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 40px 50px;
+        background-color: white;
+        /* make it a flex contianer using the display property */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      img {
+        height: 140px;
+      }
+      h2 {
+        font-weight: normal;
+        font-size: 14px;
+      }
+      li:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 7px gray;
+      }
+    </style>
+  </body>
+</html>
